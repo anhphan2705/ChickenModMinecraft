@@ -1,2 +1,2 @@
 # ChickenModMinecraft
-AP CSA Project
+chicken
