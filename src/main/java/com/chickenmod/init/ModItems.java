@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.chickenmod.items.ItemBase;
-<<<<<<< HEAD
 import com.chickenmod.items.tools.ToolAxe;
 import com.chickenmod.items.tools.ToolHoe;
 import com.chickenmod.items.tools.ToolPickaxe;
@@ -19,15 +18,11 @@ import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.util.EnumHelper;
-=======
 
-import net.minecraft.item.Item;
->>>>>>> d6be11ddb6d06eae1070fcd8cc5820a4cfe0550c
 
 public class ModItems {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
-<<<<<<< HEAD
 	//Materials
 	public static final ToolMaterial MATERIAL_CHICKEN = EnumHelper.addToolMaterial("material_chicken", 3, 750, 12.0F, 4.4F, 10);
 	
@@ -41,7 +36,4 @@ public class ModItems {
 	public static final ItemPickaxe CHICKEN_PICKAXE = new ToolPickaxe("chicken_pickaxe", MATERIAL_CHICKEN);
 	public static final ItemAxe CHICKEN_AXE = new ToolAxe("chicken_axe", MATERIAL_CHICKEN);
 	public static final ItemHoe CHICKEN_HOE = new ToolHoe("chicken_hoe", MATERIAL_CHICKEN);
-=======
-	public static final Item CHICKEN_PEARL = new ItemBase("chicken_pearl");
->>>>>>> d6be11ddb6d06eae1070fcd8cc5820a4cfe0550c
 }
