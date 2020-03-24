@@ -1,2 +1,0 @@
-# ChickenModMinecraft
-chicken
