@@ -1,5 +1,9 @@
 package com.chickenmod;
 
+<<<<<<< HEAD
+import com.chickenmod.init.ModRecipes;
+=======
+>>>>>>> d6be11ddb6d06eae1070fcd8cc5820a4cfe0550c
 import com.chickenmod.proxy.CommonProxy;
 import com.chickenmod.util.Reference;
 
@@ -29,7 +33,11 @@ public class Main {
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
+<<<<<<< HEAD
+		ModRecipes.init();
+=======
 		
+>>>>>>> d6be11ddb6d06eae1070fcd8cc5820a4cfe0550c
 	}
 	
 	@EventHandler
