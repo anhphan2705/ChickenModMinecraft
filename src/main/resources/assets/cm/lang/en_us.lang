@@ -1,3 +1,4 @@
+
 //ITEMS
 item.chicken_pearl.name=Chicken Pearl
 item.chicken_magic_fruit.name=Chicken Magic Fruit
@@ -11,3 +12,13 @@ item.chicken_hoe.name=Chicken Hoe
 
 //BLOCKS
 tile.chicken_pearl_block.name=Chicken Pearl Block
+item.chicken_pearl.name=Chicken Pearl
+item.chicken_pearl_block.name=Chicken Pearl Block
+
+//ARMOR
+item.chicken_helmet.name=Chicken Helmet
+item.chicken_chestplate.name=Chicken Chestplate
+item.chicken_leggings.name=Chicken Leggings
+item.chicken_boots.name=Chicken Boots
+
+

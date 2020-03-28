@@ -1,10 +1,8 @@
 package com.chickenmod;
 
 import com.chickenmod.init.ModRecipes;
-import com.chickenmod.proxy.CommonProxy;
-import com.chickenmod.util.Reference;
 
-import net.minecraftforge.fml.common.Mod;
+import com.chickenmod.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
