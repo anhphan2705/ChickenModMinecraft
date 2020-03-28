@@ -13,9 +13,6 @@ public class ChickenPearlBlock extends BlockBase {
 		setResistance(25.5F);								//Reference: 1200 = Obsidian  	1 = pumpkin
 		setHarvestLevel("pickaxe", 2);						// 0 = wood		1 = rock 	2 = iron 	3 = diamond 	
 		setLightLevel(10);									//Reference: 14 = torch
-		setResistance(50.0F);								//Reference: 1200 = Obsidian  	1 = pumpkin
-		setHarvestLevel("pickaxe", 2);						// 0 = wood		1 = rock 	2 = iron 	3 = diamond 	
-		setLightLevel(7);									//Reference: 14 = torch
 		//setLightOpacity();								This is for making window type block
 		//setBlockUnbreakable();							Make the block unbreakable
 	}

@@ -10,7 +10,7 @@ import net.minecraft.item.ItemAxe;
 public class ToolAxe extends ItemAxe implements IHasModel {
 	
 	public ToolAxe(String name, ToolMaterial material){
-		super(material, 10.0F, -2.8F);
+		super(material, 10.0F, -2.7F);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.MATERIALS);
