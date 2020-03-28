@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //ITEMS
 item.chicken_pearl.name=Chicken Pearl
 item.chicken_magic_fruit.name=Chicken Magic Fruit
@@ -21,4 +21,4 @@ item.chicken_chestplate.name=Chicken Chestplate
 item.chicken_leggings.name=Chicken Leggings
 item.chicken_boots.name=Chicken Boots
 
-
+tile.chicken_pearl_block.name=Chicken Pearl Block
