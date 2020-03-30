@@ -20,3 +20,6 @@ build
 # other
 eclipse
 run
+run/logs/debug-1.log.gz
+run/usercache.json
+run/usernamecache.json
