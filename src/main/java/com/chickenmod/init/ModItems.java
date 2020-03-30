@@ -30,7 +30,7 @@ public class ModItems {
 	//Materials
 	public static final ToolMaterial MATERIAL_CHICKEN = EnumHelper.addToolMaterial("material_chicken", 3, 750, 12.0F, 4.4F, 10);
 	public static final ArmorMaterial ARMOR_MATERIAL_CHICKEN = EnumHelper.addArmorMaterial("armor_material_chicken", Reference.MOD_ID + ":chicken_pearl", 14, 
-			new int[] {4, 10, 8, 4} , 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
+			new int[] {4, 8, 10, 4} , 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
 	
 	//Items
 	public static final Item CHICKEN_PEARL = new ItemBase("chicken_pearl");
