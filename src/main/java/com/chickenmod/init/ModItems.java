@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.chickenmod.items.ItemBase;
 import com.chickenmod.items.armor.ArmorBase;
+//import com.chickenmod.items.food.FoodBase;
+import com.chickenmod.items.food.FoodEffectBase;
 import com.chickenmod.items.tools.ToolAxe;
 import com.chickenmod.items.tools.ToolHoe;
 import com.chickenmod.items.tools.ToolPickaxe;
@@ -12,6 +14,7 @@ import com.chickenmod.items.tools.ToolSpade;
 import com.chickenmod.items.tools.ToolSword;
 import com.chickenmod.util.Reference;
 
+import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -22,6 +25,7 @@ import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems {
@@ -34,7 +38,6 @@ public class ModItems {
 	
 	//Items
 	public static final Item CHICKEN_PEARL = new ItemBase("chicken_pearl");
-	public static final Item CHICKEN_MAGIC_FRUIT = new ItemBase("chicken_magic_fruit");
 	
 	//Tools
 	public static final ItemSword CHICKEN_SWORD = new ToolSword("chicken_sword", MATERIAL_CHICKEN);
@@ -49,4 +52,7 @@ public class ModItems {
 	public static final Item CHICKEN_LEGGINGS = new ArmorBase("chicken_leggings", ARMOR_MATERIAL_CHICKEN, 2, EntityEquipmentSlot.LEGS);
 	public static final Item CHICKEN_BOOTS = new ArmorBase("chicken_boots", ARMOR_MATERIAL_CHICKEN, 1, EntityEquipmentSlot.FEET);
 	
+	//FOOD
+	//public static final Item CHICKEN_MAGIC_FRUIT = new FoodBase("chicken_magic_fruit", 4, 1.6F, false);
+	public static final Item CHICKEN_MAGIC_FRUIT = new FoodEffectBase("chicken_magic_fruit", 4, 2.4F, false, new PotionEffect(MobEffects.JUMP_BOOST, (60*30), 1, false, true), new PotionEffect(MobEffects.SPEED, (60*30), 0, false, true), new PotionEffect(MobEffects.LUCK, (60*30), 0, false, true), new PotionEffect(MobEffects.NIGHT_VISION, (60*30), 0, false, true));
 }
