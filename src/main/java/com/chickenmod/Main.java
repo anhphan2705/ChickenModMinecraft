@@ -6,6 +6,8 @@ import com.chickenmod.proxy.CommonProxy;
 import com.chickenmod.util.Reference;
 //import com.chickenmod.world.ModWorldGen;
 
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -33,6 +35,7 @@ public class Main {
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
+		//LootTableList.register(new ResourceLocation(Reference.MOD_ID, "chicken"));
 		ModRecipes.init();
 	}
 	
