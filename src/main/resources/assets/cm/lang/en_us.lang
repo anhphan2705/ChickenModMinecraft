@@ -1,7 +1,6 @@
 
 //ITEMS
 item.chicken_pearl.name=Chicken Pearl
-item.chicken_magic_fruit.name=Chicken Magic Fruit
 
 //TOOLS
 item.chicken_sword.name=Chicken Sword
@@ -21,4 +20,5 @@ item.chicken_chestplate.name=Chicken Chestplate
 item.chicken_leggings.name=Chicken Leggings
 item.chicken_boots.name=Chicken Boots
 
-
+//FOOD
+item.chicken_magic_fruit.name=Chicken Magic Fruit
