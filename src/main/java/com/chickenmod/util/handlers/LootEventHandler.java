@@ -22,8 +22,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class LootEventHandler {
 	
 	@SubscribeEvent
-	public static void lootTableLoad(LootTableLoadEvent event) {
-		
+	public static void lootTableLoad(LootTableLoadEvent event) 
+	{
 		LootTable loot = event.getTable();
 		
 		if(LootTableList.ENTITIES_CHICKEN.equals(event.getName())) {
