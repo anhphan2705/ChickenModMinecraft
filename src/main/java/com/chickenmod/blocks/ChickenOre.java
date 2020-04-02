@@ -1,4 +1,6 @@
+/*
 package com.chickenmod.blocks;
+
 
 import java.util.Random;
 
@@ -28,16 +30,17 @@ public class ChickenOre extends BlockBase implements IHasModel{
 		return ModItems.CHICKEN_PEARL;
 		
 	}
-	
+
 	//The quantity of the item dropped
 	/**	@Override 
-		public int quantityDropped(Random rand) 
-		{
-			int max = 3;
-			int min = 1;
-			return rand.nextInt(max) + min;
-		
-		}
+	*	public int quantityDropped(Random rand) 
+	*	{
+	*		int max = 3;
+	*		int min = 1;
+	*		return rand.nextInt(max) + min;
+	*	
+	*	}
 	**/	
-	
+/*
 }
+*/
