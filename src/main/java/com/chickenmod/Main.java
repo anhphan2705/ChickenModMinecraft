@@ -35,7 +35,7 @@ public class Main {
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		//LootTableList.register(new ResourceLocation(Reference.MOD_ID, "chicken"));
+		LootTableList.register(new ResourceLocation(Reference.MOD_ID, "entities/chicken"));
 		ModRecipes.init();
 	}
 	
