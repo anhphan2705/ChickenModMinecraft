@@ -28,7 +28,7 @@ public class LootEventHandler {
 		
 		if(LootTableList.ENTITIES_CHICKEN.equals(event.getName())) {
 			
-			LootUtils.addItemToTable(loot, ModItems.CHICKEN_PEARL, 1, 1F, 1F, 1, 1, 0F, 1F, "cm:chicken_pearl",
+			LootUtils.addItemToTable(loot, ModItems.CHICKEN_PEARL, 1, 2F, 0.1F, 1, 1, 0F, 1F, "cm:chicken_pearl",
 			new IMethod() {
 				@Override
 				public void FunctionsCallback(ArrayList<LootFunction> lootfuncs) {
@@ -39,12 +39,13 @@ public class LootEventHandler {
 			new ICondition() {
 				@Override
 				public void FunctionsCallback(ArrayList<LootCondition> lootconds) {
-					lootconds.add(new KilledByPlayer(false));
+					lootconds.add(new KilledByPlayer(!true));
 				}
 			});
 		}
 	}
 	
+	//Second way of making a drop item
 	/*
 	if (LootTableList.ENTITIES_CHICKEN.equals(event.getName()))
 	{ 
