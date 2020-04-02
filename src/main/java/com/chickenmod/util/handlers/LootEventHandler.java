@@ -8,6 +8,7 @@ import com.chickenmod.util.loot.LootUtils.ICondition;
 import com.chickenmod.util.loot.LootUtils.IMethod;
 
 import net.minecraft.world.storage.loot.LootTable;
+import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraft.world.storage.loot.RandomValueRange;
 import net.minecraft.world.storage.loot.conditions.KilledByPlayer;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
@@ -21,11 +22,11 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class LootEventHandler {
 	
 	@SubscribeEvent
-	public void lootTableLoad(LootTableLoadEvent event) {
+	public static void lootTableLoad(LootTableLoadEvent event) {
 		
 		LootTable loot = event.getTable();
 		
-		if(event.getName().getResourcePath().equals("entities/chicken")) {
+		if(LootTableList.ENTITIES_CHICKEN.equals(event.getName())) {
 			
 			LootUtils.addItemToTable(loot, ModItems.CHICKEN_PEARL, 1, 1F, 1F, 1, 1, 0F, 1F, "cm:chicken_pearl",
 			new IMethod() {
@@ -38,10 +39,23 @@ public class LootEventHandler {
 			new ICondition() {
 				@Override
 				public void FunctionsCallback(ArrayList<LootCondition> lootconds) {
-					lootconds.add(new KilledByPlayer(true));
+					lootconds.add(new KilledByPlayer(false));
 				}
-				});
+			});
 		}
 	}
+	
+	/*
+	if (LootTableList.ENTITIES_CHICKEN.equals(event.getName()))
+	{ 
+		event.getTable().getPool("main").addEntry(new LootEntryItem(
+			<reference to your item>,
+			<weight>,
+			<quality>,
+			<Lootfunction array>,
+			<Lootcondition array>,
+			<name for the entry>)); 
+	}
+	*/
 	
 }
