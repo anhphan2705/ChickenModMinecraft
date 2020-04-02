@@ -32,9 +32,9 @@ public class ModItems {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
 	//Materials
-	public static final ToolMaterial MATERIAL_CHICKEN = EnumHelper.addToolMaterial("material_chicken", 3, 750, 12.0F, 4.4F, 10);
+	public static final ToolMaterial MATERIAL_CHICKEN = EnumHelper.addToolMaterial("material_chicken", 3, 1100, 12.0F, 4.4F, 10);
 	public static final ArmorMaterial ARMOR_MATERIAL_CHICKEN = EnumHelper.addArmorMaterial("armor_material_chicken", Reference.MOD_ID + ":chicken_pearl", 14, 
-			new int[] {4, 8, 10, 4} , 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
+			new int[] {5, 8, 10, 5} , 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
 	
 	//Items
 	public static final Item CHICKEN_PEARL = new ItemBase("chicken_pearl");
@@ -54,5 +54,10 @@ public class ModItems {
 	
 	//FOOD
 	//public static final Item CHICKEN_MAGIC_FRUIT = new FoodBase("chicken_magic_fruit", 4, 1.6F, false);
-	public static final Item CHICKEN_MAGIC_FRUIT = new FoodEffectBase("chicken_magic_fruit", 4, 2.4F, false, new PotionEffect(MobEffects.JUMP_BOOST, (60*30), 1, false, true), new PotionEffect(MobEffects.SPEED, (60*30), 0, false, true), new PotionEffect(MobEffects.LUCK, (60*30), 0, false, true), new PotionEffect(MobEffects.NIGHT_VISION, (60*30), 0, false, true));
+	public static final Item CHICKEN_MAGIC_FRUIT = new FoodEffectBase("chicken_magic_fruit", 4, 2.4F, false, 
+			new PotionEffect(MobEffects.JUMP_BOOST, (60*30), 1, false, true), 
+			new PotionEffect(MobEffects.SPEED, (60*30), 0, false, true), 
+			new PotionEffect(MobEffects.LUCK, (60*30), 0, false, true), 
+			new PotionEffect(MobEffects.NIGHT_VISION, (60*30), 0, false, true)
+	);
 }
